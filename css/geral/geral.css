@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+:root /* Paleta preta */ {
+  --c12: #000;
+  --c11: #111;
+  --c10: #2e2e2e;
+  --c9: #404040;
+  --c8: #595959;
+  --c7: #717171;
+  --c6: #9c9c9c;
+  --c5: #b2b2b2;
+  --c4: #ccc;
+  --c3: #dedede;
+  --c2: #ededed;
+  --c1: #f7f7f7;
+  --w: #fff;
+}
+:root /* Paleta cor principal */{
+  --p5: #332200;
+  --p4: #664400;
+  --p3: #A66f00;
+  --p2: #e4a30b;
+  --p1: #ffbb00;
+}
+.cor-ponto {
+  color: var(--p1);
+}
+.btn-principal {
+  padding: 1rem 2rem;
+  background-image: linear-gradient(to bottom, #FFBF00, #F2A50C);
+  color: var(--p5);
+  text-transform: uppercase;
+}
+
