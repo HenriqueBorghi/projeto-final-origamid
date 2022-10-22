@@ -42,5 +42,6 @@ img {
   background-image: linear-gradient(to bottom, #FFBF00, #F2A50C);
   color: var(--p5);
   text-transform: uppercase;
+  border-radius: 5px;
 }
 
