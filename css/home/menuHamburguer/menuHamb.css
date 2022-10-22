@@ -20,7 +20,7 @@
     padding: 15px 0;
   }
   .header-nav {
-    display: grid !important; 
+    display: grid !important;
     grid-template-columns: 1fr;
     align-items: center;
     text-align: center;
