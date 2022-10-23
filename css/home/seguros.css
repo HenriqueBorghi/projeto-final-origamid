@@ -1,0 +1,135 @@
+body {
+  margin-bottom: 200px;
+}
+.seguros {
+  background-color: var(--c11);
+  padding: 100px 40px;
+  position: relative;
+}
+.seguros-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px 40px;
+}
+.seguros::before {
+  content: url('../../img/dec/bottom-left.svg');
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+.seguros-titulo {
+  grid-column: 1 / -1;
+  color: var(--w);
+}
+.seguros-bloco {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-self: center;
+  background-color: var(--c12);
+  padding: 40px 40px 40px 60px;
+  border-radius: 5px;
+  row-gap: 40px;
+}
+.prata-titulo {
+  color: var(--c6);
+}
+.ouro-titulo {
+  color: var(--p1);
+}
+.seguros-lista {
+  display: grid;
+  gap: 20px;
+  color: var(--w);
+}
+.seguros-itens {
+  position: relative;
+}
+.seguros-itens::before {
+  content: url('../../img/icones/lista.svg');
+  position: absolute;
+  left: -20px;
+  top: 3px;
+}
+.seguros-btn {
+  place-self: start;
+}
+.seguros-prata .seguros-btn {
+  background-image: none;
+  background-color: var(--c10);
+  color: var(--c4);
+}
+.container-preco {
+  grid-row: 1 / 3;
+  grid-column: 2;
+  display: grid;
+  align-self: start;
+}
+.preco {
+  color: var(--w);
+}
+.ocorrencia {
+  text-align: end;
+  color: var(--c6);
+}
+@media (max-width: 900px) {
+  .seguros-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .seguros {
+    padding: 100px 20px;
+  }
+  .seguros-bloco {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .seguros-container {
+    gap: 20px;
+  }
+  .seguros-titulo {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .container-preco {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: -10px;
+  }
+  .preco {
+    font-size: 1.875rem;
+  }
+  .ocorrencia {
+    text-align: start;
+  }
+  .seguros-lista {
+    margin-top: 10px;
+  }
+  .seguros::before {
+    bottom: 20px;
+    left: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .seguros-titulo {
+    font-size: 2.5rem;
+  }
+  .seguros-bloco {
+    padding: 40px;
+  }
+  .ouro-titulo, .prata-titulo {
+    font-size: 1.75rem;
+  }
+  .preco {
+    font-size: 1.25rem;
+  }
+  .seguros-itens {
+    font-size: .875rem;
+  }
+  .seguros-btn {
+    font-size: .875rem;
+    padding: .875rem 1.875rem;
+  }
+}

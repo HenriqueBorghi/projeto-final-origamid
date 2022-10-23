@@ -104,6 +104,9 @@
   .feedback-nome {
     font-size: 1.25rem;
   }
+  .feedback-comentario::after {
+    right: 20px;
+  }
 }
 @media (max-width: 800px) {
   .feedback-comentario {
