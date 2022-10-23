@@ -44,4 +44,7 @@ img {
   text-transform: uppercase;
   border-radius: 5px;
 }
+.btn-principal:hover {
+  opacity: 0.9;
+}
 

@@ -1,0 +1,57 @@
+.rodape {
+  background-color: var(--c12);
+}
+.rodape-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px 60px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.rodape-contato {
+  display: grid;
+  grid-column: 2 / 4;
+}
+.rodape-titulo {
+  color: var(--w);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.rodape-contato span{
+  color: var(--c5);
+}
+.bloco-contato {
+  padding: 30px 0;
+  display: grid;
+  gap: 20px;
+  max-width: 400px;
+  border-bottom: solid 2px var(--c11);
+}
+.lista-socials {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+.informacoes-lista {
+  display: grid;
+  gap: 10px;
+}
+.informacoes-itens {
+  color: var(--c5);
+  line-height: 2;
+}
+.informacoes-itens:hover {
+  color: var(--w);
+}
+.rodape-informacoes .rodape-titulo {
+  margin-bottom: 40px;
+}
+.rodape-direitos {
+  color: var(--c6);
+  text-transform: capitalize;
+  margin-top: 80px;
+  grid-column: 1 / -1;
+  font-weight: regular;
+  font-size: 1.125rem;
+}
