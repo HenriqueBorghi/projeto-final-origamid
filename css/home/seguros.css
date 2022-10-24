@@ -47,7 +47,6 @@
   content: url('../../img/icones/lista.svg');
   position: absolute;
   left: -20px;
-  top: 3px;
 }
 .seguros-btn {
   place-self: start;
@@ -128,8 +127,5 @@
   .seguros-btn {
     font-size: .875rem;
     padding: .875rem 1.875rem;
-  }
-  .seguros-itens::before {
-    top: 0;
   }
 }
