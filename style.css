@@ -1,7 +1,7 @@
 @import url('./css/geral/geral.css');
 @import url('./css/geral/fontes.css');
-@import url('./css/home/menuHamburguer/menuHamb.css');
-@import url('./css/home/header.css');
+@import url('./css/geral/menuHamburguer/menuHamb.css');
+@import url('./css/geral/header.css');
 @import url('./css/home/introducao.css');
 @import url('./css/home/escolha.css');
 @import url('./css/home/tecnologia.css');
@@ -9,3 +9,4 @@
 @import url('./css/home/feedback.css');
 @import url('./css/home/seguros.css');
 @import url('./css/geral/footer.css');
+@import url('./css/pagina-bicicletas/principal.css');
