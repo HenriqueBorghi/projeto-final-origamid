@@ -2,7 +2,7 @@ main {
   margin: 80px 0;
 }
 .bicicleta:nth-child(2){
-  background-image: linear-gradient(to right, var(--w) 25%, var(--c11) 10%);
+  background-image: linear-gradient(to right, var(--w) 30%, var(--c11) 10%);
 }
 .bicicleta-container {
   display: grid;
@@ -10,7 +10,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
-  padding: 80px;
+  padding: 80px 40px;
 }
 .img-container {
   position: relative;
@@ -30,6 +30,9 @@ main {
 }
 .bicicleta-foto {
   border-radius: 5px;
+  object-fit: cover;
+  object-position: top center;
+  height: 100%;
 }
 .bicicleta-descricao {
   display: grid;
@@ -37,6 +40,7 @@ main {
   align-items: center;
   position: relative;
   color: var(--c8);
+  gap: 10px;
 }
 .bicicleta-descricao::before {
   content: '';
@@ -46,11 +50,18 @@ main {
   background-color: var(--p1);
   top: 2px;
 }
+.bicicleta-descricao::after {
+  content: url('./../../img/dec/top-right.svg');
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
 .bicicleta-nome {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 2.25rem;
   line-height: 1.11;
   font-weight: 600;
+  z-index: 1;
 }
 .bicicleta-paragrafo {
   grid-column: 1 / -1;
@@ -87,4 +98,43 @@ main {
 }
 .bicicleta:nth-child(3) .img-container::after {
   content: 'R$ 3999';
+}
+@media (max-width: 800px) {
+  .bicicleta-container {
+    grid-template-columns: 1fr;
+  }
+  .bicicleta:nth-child(2) {
+    background-image: initial;
+    background-color: var(--c11);
+  }
+}
+@media (max-width: 600px) {
+  .bicicleta-descricao {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .bicicleta-nome {
+    font-size: 2rem;
+  }
+  .bicicleta-paragrafo {
+    font-size: 1rem;
+  }
+  .bicicleta-itens {
+    font-size: 1rem;
+  }
+  .bicicleta-container {
+    padding: 40px 20px;
+  }
+  main {
+    margin: 40px 0;
+  }
+}
+@media (max-width: 400px) {
+  .bicicleta-descricao::after {
+    display: none;
+  }
+  .img-container::after {
+    font-size: .75rem;
+    padding: 5px 10px 5px 5px;
+  }
 }
