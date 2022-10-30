@@ -9,5 +9,6 @@
 @import url('./css/home/feedback.css');
 @import url('./css/home/seguros.css');
 @import url('./css/geral/footer.css');
-@import url('./css/pagina-bicicletas/principal.css');
-@import url('./css/pagina-bicicletas/introducao.css');
+@import url('./css/pagina-escolha/introducao.css');
+@import url('./css/pagina-escolha/principal.css');
+@import url('./css/bicicletas-css/principal.css');

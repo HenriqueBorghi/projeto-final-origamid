@@ -1,4 +1,4 @@
-main {
+.margin-main {
   margin: 80px 0;
 }
 .bicicleta:nth-child(2){
@@ -125,7 +125,7 @@ main {
   .bicicleta-container {
     padding: 40px 20px;
   }
-  main {
+  .margin-main {
     margin: 40px 0;
   }
 }
