@@ -1,0 +1,20 @@
+.escolher-outra-container {
+  margin-top: 0;
+  padding: 60px 0;
+}
+@media (max-width: 550px) {
+  .escolha-outra img {
+    max-width: 300px;
+  }
+  .escolha-outra {
+    width: 640px;
+  }
+}
+@media (max-width: 350px) {
+  .escolha-outra img {
+    max-width: 240px;
+  }
+  .escolha-outra {
+    width: 500px;
+  }
+}
