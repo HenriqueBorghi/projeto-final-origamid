@@ -1,6 +1,7 @@
 .escolher-outra-container {
-  margin-top: 0;
+  margin: 0 auto;
   padding: 60px 0;
+  max-width: 1200px;
 }
 @media (max-width: 550px) {
   .escolha-outra img {
