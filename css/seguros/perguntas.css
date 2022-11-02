@@ -1,0 +1,113 @@
+input {
+  display: none;
+}
+.perguntas-frequentes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 40px;
+}
+.perguntas-itens:nth-child(odd) .pergunta,
+.perguntas-itens:nth-child(odd) .resposta {
+  background-color: var(--c1);
+}
+.perguntas-titulo {
+  margin-bottom: 80px;
+}
+.pergunta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+  cursor: pointer;
+}
+.pergunta::before {
+  content: '';
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  background-color: var(--p1);
+  left: 20px;
+  top: 28px;
+}
+.resposta {
+  display: none;
+  padding: 0 40px 20px 40px;
+  color: var(--c9);
+}
+.resposta p {
+  max-width: 80ch;
+}
+#pergunta-1:checked ~ #resposta-1,
+#pergunta-2:checked ~ #resposta-2,
+#pergunta-3:checked ~ #resposta-3,
+#pergunta-4:checked ~ #resposta-4,
+#pergunta-5:checked ~ #resposta-5,
+#pergunta-6:checked ~ #resposta-6 {
+  display: block;
+}
+.seta {
+  transition: transform 0.3s;
+}
+#pergunta-1:checked + label .seta,
+#pergunta-2:checked + label .seta,
+#pergunta-3:checked + label .seta,
+#pergunta-4:checked + label .seta,
+#pergunta-5:checked + label .seta,
+#pergunta-6:checked + .seta {
+  transform: rotate(180deg);
+}
+@media (max-width: 700px) {
+  .perguntas-titulo {
+    font-size: 2.25rem;
+  }
+  .pergunta {
+    font-size: .875rem;
+    padding: 20px 20px 20px 40px;
+  }
+  .resposta {
+    font-size: .75rem;
+  }
+  .pergunta::before {
+    height: 4px;
+    width: 10px;
+    top: 27px;
+  }
+}
+@media (max-width: 500px) {
+  .perguntas-frequentes {
+    padding: 80px 20px;
+  }
+  .perguntas-titulo {
+    font-size: 1.75rem;
+    margin-bottom: 60px;
+  }
+  .pergunta {
+    font-size: .75rem;
+    padding: 20px 20px 15px 40px;
+  }
+  .resposta {
+    font-size: .75rem;
+  }
+}
+@media (max-width: 300px) {
+  .perguntas-frequentes {
+    padding: 60px 20px;
+  }
+  .perguntas-titulo {
+    margin-bottom: 40px;
+  }
+  .pergunta {
+    font-size: .6rem;
+    padding: 10px 20px 10px 25px;
+  }
+  .resposta {
+    font-size: .6rem;
+    padding: 0 40px 10px 25px;
+  }
+  .pergunta::before {
+    top: 14px;
+    left: 10px;
+  }
+}

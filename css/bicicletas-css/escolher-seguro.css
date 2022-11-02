@@ -24,6 +24,7 @@
 .conhecer-seguro-foto {
   height: 800px;
   object-fit: cover;
+  border-radius: 5px;
   object-position: top center;
 }
 .btn-escolher-seguro {
