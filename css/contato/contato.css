@@ -42,11 +42,12 @@
   left: 40px;
   bottom: 40px;
 }
-.info-itens {
+.contato-info-itens {
   color: var(--c4);
+  grid-column: 2;
 }
-.info-itens:nth-child(5),
-.info-itens:nth-child(8) {
+.contato-info-itens:nth-child(5),
+.contato-info-itens:nth-child(8) {
   margin-bottom: 30px;
 }
 .contato-redes {
@@ -54,9 +55,6 @@
 }
 .contato-icon {
   grid-column: 1;
-}
-.info-itens {
-  grid-column: 2;
 }
 .contato-redes {
   grid-column: 2;
@@ -151,7 +149,7 @@
   .contato-informacoes {
     padding: 60px 20px;
   }
-  .info-itens,
+  .contato-info-itens,
   .area-contato-itens,
   .input-area-contato {
     font-size: .875rem;
