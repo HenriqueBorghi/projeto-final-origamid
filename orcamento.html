@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Bikcraft | Orçamento</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html"><img src="./img/bikcraft.svg" alt="logo bikcraft"></a>
+      <nav class="nav">
+        <ul class="header-nav">
+          <li><a class="nav-itens font-1-m" href="bicicletas.html">Bicicletas</a></li>
+          <li><a class="nav-itens font-1-m" href="seguros.html">Seguros</a></li>
+          <li><a class="nav-itens font-1-m" href="contato.html">Contato</a></li>
+        </ul>
+        <button class="menu-hamb">
+          <div class="open material-icons">menu</div>
+          <div class="close material-icons">close</div>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="orcamento">
+    <div class="orcamento-container">
+      <div class="orcamento-cabecalho">
+        <span class="orcamento-subtitulo font-2-l">cotações no seu email</span>
+        <h1 class="orcamento-titulo font-1-xxl">solicite um orçamento<span class="cor-ponto">.</span></h1>
+      </div>
+      <div class="selecao">
+        <span class="selecao-subtitulo font-1-xs">bikcraft ou seguro?</span>
+
+        <input type="radio" class="input-selecao" name="tipo" id="bikcraft" value="bikcraft">
+        <label for="tipo" class="font-1-m">Bikcraft</label>
+
+        <input type="radio" class="input-selecao" name="tipo" id="seguro" value="seguro">
+        <label for="tipo" class="font-1-m">Seguro</label>
+        <div class="selecao-bikcraft">
+          <span class="selecao-subtitulo font-1-xs">escolha a sua:</span>
+
+          <input type="radio" class="input-escolha" name="produto" id="nimbus" value="nimbus">
+          <label for="produto" class="font-1-m">Nimbus Stark <span class="selecao-preco font-1-m">R$ 4999</span></label>
+          <div class="selecao-nimbus-container">
+            <ul class="selecao-lista">
+              <li class="selecao-itens">
+                <img src="./img/icones/eletrica.svg" alt="">
+                <h3 class="selecao-itens-nome">Motor Elétrico</h3>
+              </li>
+              <li class="selecao-itens">
+                <img src="./img/icones/carbono.svg" alt="">
+                <h3 class="selecao-itens-nome">Fibra de Carbono</h3>
+              </li>
+              <li class="selecao-itens">
+                <img src="./img/icones/velocidade.svg" alt="">
+                <h3 class="selecao-itens-nome">40 km/h</h3>
+              </li>
+              <li class="selecao-itens">
+                <img src="./img/icones/rastreador.svg" alt="">
+                <h3 class="selecao-itens-nome">Rastreador</h3>
+              </li>
+            </ul>
+            <img src="./img/bicicleta/nimbus.jpg" alt="">
+          </div>
+
+          <input type="radio" class="input-escolha" name="produto" id="magic" value="magic">
+          <label for="produto" class="font-1-m">Magic Might<span class="selecao-preco font-1-m">R$ 2499</span></label>
+          <div class="selecao-nimbus-container">
+            <ul class="selecao-lista">
+              <li class="selecao-itens">
+                <img src="./img/icones/eletrica.svg" alt="">
+                <h3 class="selecao-itens-nome">Motor Elétrico</h3>
+              </li>
+              <li class="selecao-itens">
+                <img src="./img/icones/carbono.svg" alt="">
+                <h3 class="selecao-itens-nome">Fibra de Carbono</h3>
+              </li>
+              <li class="selecao-itens">
+                <img src="./img/icones/velocidade.svg" alt="">
+                <h3 class="selecao-itens-nome">40 km/h</h3>
+              </li>
+              <li class="selecao-itens">
+                <img src="./img/icones/rastreador.svg" alt="">
+                <h3 class="selecao-itens-nome">Rastreador</h3>
+              </li>
+            </ul>
+            <img src="./img/bicicleta/magic.jpg" alt="">
+          </div>
+
+          <input type="radio" class="input-escolha" name="produto" id="nebula" value="nebula">
+          <label for="produto" class="font-1-m">Nebula Cosmic<span class="selecao-preco font-1-m">R$ 3999</span></label>
+          <div class="selecao-nimbus-container">
+            <ul class="selecao-lista">
+              <li class="selecao-itens">
+                <img src="./img/icones/eletrica.svg" alt="">
+                <h3 class="selecao-itens-nome">Motor Elétrico</h3>
+              </li>
+              <li class="selecao-itens">
+                <img src="./img/icones/carbono.svg" alt="">
+                <h3 class="selecao-itens-nome">Fibra de Carbono</h3>
+              </li>
+              <li class="selecao-itens">
+                <img src="./img/icones/velocidade.svg" alt="">
+                <h3 class="selecao-itens-nome">40 km/h</h3>
+              </li>
+              <li class="selecao-itens">
+                <img src="./img/icones/rastreador.svg" alt="">
+                <h3 class="selecao-itens-nome">Rastreador</h3>
+              </li>
+            </ul>
+            <img src="./img/bicicleta/nebula.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="selecao-seguro">
+          <span class="selecao-subtitulo font-1-xs">escolha o plano:</span>
+
+          <input type="radio" name="seguro" id="prata" value="prata">
+          <label for="seguro" class="font-1-m">Prata<span class="selecao-preco font-1-m"></span>R$ 199</label>
+
+          <input type="radio" name="seguro" id="ouro" value="ouro">
+          <label for="seguro" class="font-1-m">Ouro<span class="selecao-preco font-1-m"></span>R$ 299</label>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="rodape">
+    <div class="rodape-container">
+      <img src="./img/bikcraft.svg" alt="bikcraft" class="rodape-logo">
+      <div class="rodape-contato">
+        <h3 class="rodape-titulo font-2-l">contato</h3>
+        <div class="bloco-contato">
+          <span class="font-2-m">+51 21 9999-9999</span>
+          <span class="font-2-m">contato@bikcraft.com</span>
+        </div>
+        <div class="bloco-contato">
+          <span class="font-2-m">Rua Ali Perto, 42 - Botafogo</span>
+          <span class="font-2-m">Rio de Janeiro - RJ</span>
+        </div>
+        <ul class="lista-socials">
+          <li class="socials-itens"><a href="/"><img src="./img/redes/instagram.svg" alt="instagram"></a></li>
+          <li class="socials-itens"><a href="/"><img src="./img/redes/facebook.svg" alt="instagram"></a></li>
+          <li class="socials-itens"><a href="/"><img src="./img/redes/youtube.svg" alt="instagram"></a></li>
+        </ul>
+      </div>
+      <div class="rodape-informacoes">
+        <h3 class="rodape-titulo font-2-l">informações</h3>
+        <ul class="informacoes-lista">
+          <li><a href="bicicletas.html" class="informacoes-itens font-1-m">Bicicletas</a></li>
+          <li><a href="seguros.html" class="informacoes-itens font-1-m">Seguros</a></li>
+          <li><a href="contato.html" class="informacoes-itens font-1-m">Contato</a></li>
+          <li><a href="/" class="informacoes-itens font-1-m">Termos e Condições</a></li>
+        </ul>
+      </div>
+      <span class="rodape-direitos font-2-l-b">Bikcraft © Alguns direitos reservados</span>
+    </div>
+  </footer>
+</body>
+<script src="./css/geral/menuHamburguer/menuHamb.js"></script>
+
+</html>
