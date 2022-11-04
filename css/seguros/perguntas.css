@@ -55,7 +55,7 @@
 #pergunta-3:checked + label .seta,
 #pergunta-4:checked + label .seta,
 #pergunta-5:checked + label .seta,
-#pergunta-6:checked + .seta {
+#pergunta-6:checked + label .seta {
   transform: rotate(180deg);
 }
 @media (max-width: 700px) {
